@@ -1,0 +1,240 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+html {
+    background-image: linear-gradient(to right, #4158d0, #c850c0);
+}
+
+a {
+    color: black;
+    text-decoration: none;
+}
+
+header h1 {
+    padding-left: 45%;
+    margin: 10px;
+}
+
+header ul {
+    display: flex;
+    justify-content: space-evenly;
+    background-color: rgb(223, 223, 223);
+}
+
+header ul li {
+    list-style: none;
+    height: 100%;
+    margin: 15px;
+}
+
+header ul li a {
+    height: 100%;
+    font-size: larger;
+}
+
+header ul li i {
+    height: 100%;
+    font-size: larger;
+    cursor: pointer;
+    opacity: 0.5;
+}
+
+header ul li i:hover {
+    opacity: 1;
+}
+
+.container {
+    max-width: 100%;
+    margin: 0 auto;
+}
+
+.box {
+    margin-top: 10px;
+    display: flex;
+    padding: 10px;
+}
+
+.box:first-child {
+    margin-top: 0;
+}
+
+.box:hover {
+    box-shadow: 1px 1px 5px rgb(219, 219, 219);
+}
+
+.box-row:first-child {
+    width: 25%;
+}
+
+.box-row img {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+}
+
+.box-row:last-child {
+    margin-left: 30px;
+    width: 75%;
+}
+
+
+/* //MODAL  */
+
+
+/* The Modal (background) */
+
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    padding-top: 100px;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgb(0, 0, 0);
+    background-color: rgba(0, 0, 0, 0.4);
+}
+
+
+/* Modal Content */
+
+.modal-header {
+    background-color: #fefefe;
+    margin: auto;
+    border: 1px solid #888;
+    width: 80%;
+    height: 30px;
+    padding: 10px;
+}
+
+
+/* The Close Button */
+
+.close {
+    color: #aaaaaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.modal-content {
+    background-color: #fefefe;
+    margin: auto;
+    border: 1px solid #888;
+    width: 80%;
+    height: fit-content;
+    padding: 10px;
+}
+
+.modal-content input {
+    padding: 10px;
+    font-size: larger;
+    width: 80%;
+    margin: 0 auto;
+}
+
+.modal-content i {
+    color: white;
+}
+
+.modal-content button {
+    margin-left: 1%;
+    padding: 10px 4%;
+    background-color: rgba(116, 116, 240, 0.8);
+}
+
+.modal-content button:hover {
+    background-color: rgba(116, 116, 240, 1);
+}
+
+.title-header {
+    font-size: larger;
+}
+
+.btn {
+    padding: 10px;
+    background-color: rgba(116, 116, 240, 0.8);
+    color: white;
+}
+
+.btn:hover {
+    background-color: rgba(116, 116, 240, 1);
+}
+
+.container {
+    background-color: #fdfdfd;
+    border-radius: 0px;
+    margin: 0px 0%;
+}
+
+li {
+    font-size: larger;
+}
+
+li:hover {
+    color: #4158d0;
+    border-bottom: #000 3px solid;
+    transition: all ease-in-out 500ms;
+    cursor: pointer;
+}
+
+@media screen and (min-width:768px) {
+    .modal-content {
+        width: 50%;
+    }
+    .modal-header {
+        width: 50%;
+    }
+    .container {
+        border-radius: 5px;
+        margin: 10px 10%;
+    }
+}
+
+@media screen and (min-width:900px) {
+    .container {
+        border-radius: 5px;
+        margin: 10px 20%;
+    }
+}
+
+
+/* .loader {} */
+
+.loader>div {
+    height: 100px;
+    width: 100px;
+    border: 15px solid #45474b;
+    border-top-color: #4158d0;
+    position: absolute;
+    margin: auto;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    border-radius: 50%;
+    animation: spin 1.5s infinite linear;
+}
+
+@keyframes spin {
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+.content {
+    display: none;
+}

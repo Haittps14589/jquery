@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>News</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css">
+    <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+</head>
+
+<body>
+
+    <div class="loader">
+        <div></div>
+    </div>
+
+    <div class="content">
+        <header>
+            <h1 style="color: white;">My News<span style="color: red;">.</span></h1>
+            <nav>
+                <ul>
+                    <li data-countries="gb" id="country">
+                        United Kingdom
+                    </li>
+                    <li data-countries="au" id="country">
+                        Australia
+                    </li>
+                    <li data-countries="ca" id="country">
+                        Canada
+                    </li>
+                    <li data-countries="ie" id="country">
+                        Ireland
+                    </li>
+                    <li data-countries="sg" id="country">
+                        United States
+                    </li>
+                    <li data-countries="au" id="country">
+                        Singapore
+                    </li>
+                    <li>
+                        <i class="fas fa-search-plus"></i>
+                    </li>
+                </ul>
+            </nav>
+        </header>
+
+        <main>
+            <div class="container">
+            </div>
+        </main>
+
+
+
+        <!-- The Modal -->
+        <div id="myModal" class="modal">
+
+            <div class="modal-header">
+                <p class="close">&times; </p>
+                <p class="title-header">Search newpaper </p>
+
+            </div>
+
+            <div class="modal-content ui-widget">
+                <input type="text" id="tags" placeholder="Nhập từ khóa cần tìm"> <button><i class="fas fa-search"></i></button>
+            </div>
+
+        </div>
+    </div>
+
+
+    <!-- JQUERY -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <!-- JQUERY UI -->
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+
+    <!-- JS Custom -->
+    <script src="main.js"></script>
+</body>
+
+</html>
